@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
     if !(BRANDS.include?(@brand))
     BRANDS << brand
-    
+  authenticate_or_request_with_http_digest
   end
 
   def cobble
